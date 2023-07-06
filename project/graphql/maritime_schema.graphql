@@ -1,0 +1,23 @@
+type Event
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+    primaryEmail: String
+    birthDate: Date
+    ageInYears: Integer
+    vitalStatus: PersonStatus
+  }
+
+type EventCollection
+  {
+    entries: [Event]
+  }
+
+type NamedThing
+  {
+    id: Uriorcurie!
+    name: String
+    description: String
+  }
+
